@@ -17,10 +17,10 @@ public class History implements Serializable{
     private Reader reader;
     private Date takeOnDate;
     private Date returnDate;
-    
-    public History(){
+
+    public History() {
     }
-    
+
     public History(Book book, Reader reader, Date takeOnDate, Date returnDate) {
         this.book = book;
         this.reader = reader;
@@ -64,11 +64,10 @@ public class History implements Serializable{
     public String toString() {
         return "History{" 
                 + "book=" + book.getName()
-                + ", reader=" + reader.getFirstName()+" "+reader.getLastName()
+                + ", reader=" + reader.getName()+" "+reader.getLastname()
                 + ", takeOnDate=" + takeOnDate 
                 + ", returnDate=" + returnDate 
                 + '}';
     }
-    
     
 }

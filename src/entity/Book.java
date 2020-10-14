@@ -9,14 +9,14 @@ import java.io.Serializable;
 
 /**
  *
- * @author user
+ * @author sillamae kutsekool
  */
 public class Book implements Serializable{
     private String name;
     private String author;
     private Integer publishedYear;
-    
-    public Book(){
+
+    public Book() {
     }
 
     public Book(String name, String author, Integer publishedYear) {
@@ -51,10 +51,10 @@ public class Book implements Serializable{
 
     @Override
     public String toString() {
-        return "Book{"
-                + "name=" + name
-                + ", author=" + author
-                + ", publishedYear=" + publishedYear
+        return "Book{" 
+                + "name=" + name 
+                + ", author=" + author 
+                + ", publishedYear=" + publishedYear 
                 + '}';
     }
     

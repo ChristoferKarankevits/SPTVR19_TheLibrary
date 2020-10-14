@@ -9,55 +9,54 @@ import java.io.Serializable;
 
 /**
  *
- * @author user
+ * @author sillamae kutsekool
  */
 public class Reader implements Serializable{
-    private String firstName;
-    private String lastName;
-    private String email;
-    
-    
-    public Reader(){
+    private String name;
+    private String lastname;
+    private String phone;
+
+    public Reader() {
     }
 
-    public Reader(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+    public Reader(String name, String lastname, String phone) {
+        this.name = name;
+        this.lastname = lastname;
+        this.phone = phone;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     @Override
     public String toString() {
-        return "Reader{" + "firstName=" + firstName
-                + ", lastName=" + lastName
-                + ", email=" + email
+        return "Reader{" 
+                + "name=" + name 
+                + ", lastname=" + lastname 
+                + ", phone=" + phone 
                 + '}';
     }
-    
-    
-    
+      
+            
 }

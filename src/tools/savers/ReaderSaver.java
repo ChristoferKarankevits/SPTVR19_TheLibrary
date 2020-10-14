@@ -5,10 +5,6 @@
  */
 package tools.savers;
 
-/**
- *
- * @author user
- */
 import entity.Book;
 import entity.Reader;
 import java.io.FileInputStream;
@@ -26,6 +22,7 @@ import java.util.logging.Logger;
  */
 public class ReaderSaver {
     private String fileName = "readers";
+
     public void saveReaders(Reader[] readers) {
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -37,9 +34,8 @@ public class ReaderSaver {
         } catch (FileNotFoundException ex) {
             System.out.println("Не найден файл");
         } catch (IOException ex) {
-            System.out.println("Ошибка ввода/вывода");
+            System.out.println("Ошибка ввода/вывода");    
         }
-        
     }
 
     public Reader[] loadFile() {
@@ -56,7 +52,7 @@ public class ReaderSaver {
         } catch (ClassNotFoundException ex) {
             System.out.println("Ошибка: не найден класс");
         }
-        return new Reader[10];
+        return new Reader[100];
     }
     
 }

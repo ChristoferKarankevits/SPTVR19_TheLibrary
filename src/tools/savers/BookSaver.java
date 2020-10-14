@@ -12,15 +12,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author user
  */
 public class BookSaver {
-    private String fileName = "books";
+    private final String fileName = "books";
+
     public void saveBooks(Book[] books) {
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -32,9 +31,8 @@ public class BookSaver {
         } catch (FileNotFoundException ex) {
             System.out.println("Не найден файл");
         } catch (IOException ex) {
-            System.out.println("Ошибка ввода/вывода");
+            System.out.println("Ошибка ввода/вывода");    
         }
-        
     }
 
     public Book[] loadFile() {
@@ -51,7 +49,7 @@ public class BookSaver {
         } catch (ClassNotFoundException ex) {
             System.out.println("Ошибка: не найден класс");
         }
-        return new Book[10];
+        return new Book[100];
     }
     
 }
